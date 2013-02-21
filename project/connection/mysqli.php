@@ -1,9 +1,9 @@
 <?php
 
-$db_host = 'localhost';
-$db_user = 'mytutori_yellows';
-$db_pass = '(J{T&)N##=$W';
-$db_name = 'mytutori_yellowstone';
+$db_host = 'host goes here';
+$db_user = 'proxi user goes here';
+$db_pass = 'password goes here';
+$db_name = 'db name goes here';
 
 $con = new mysqli($db_host, $db_user, $db_pass, $db_name);
 if (mysqli_connect_error()){
