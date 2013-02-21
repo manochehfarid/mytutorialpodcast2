@@ -3,9 +3,9 @@
 /*
  * Connects to the database using PDO
  */
-$dsn = 'mysql:host = localhost dbname = mytutori_yellowstone';
-$user = 'mytutori_yellows';
-$password = '(J{T&)N##=$W';
+$dsn = 'mysql:host = host goes here dbname = db name goes here';
+$user = 'proxy user goes here';
+$password = 'password goes here';
 
 try {
     $con = new PDO($dsn,$user,$password);
