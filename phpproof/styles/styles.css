@@ -1,0 +1,38 @@
+body {
+    color: black; font-family: helvetica; font-size: 12px; padding: 3em; margin: 3em;
+}
+header{
+    background-color: lightblue; font-family: sans-serif;font-weight: bold; font-size: 12px; padding: 2em; margin:2em; line-height: 55%; border: solid 1px red;
+}
+
+h1{color: red; font-family: sans-serif; font-weight: bold; font-size: 24px; text-align: center;}
+nav{
+    background-color: lightblue; font-family: sans-serif;font-size: 12px; padding: 1em; margin: 1em; border: dotted thick black;
+}
+div#content{
+    font-family: sans-serif; font-size: 12px; border: solid 1px blue; margin-right: 400px; margin-left: 300px; padding: 3em; height: 100%; width: 40%;
+}
+.scalar_variable{
+    color: blue; margin-left: 25px;
+}
+.if_structure{
+    color: blue; margin-left: 25px;
+}
+.for_loop{
+    color: blue; margin-left: 25px;
+}
+.POST_array{
+    color: blue; margin-left: 25px;
+}
+.division_operator{
+    color: blue; margin-left: 25px;
+}
+.less_than_operator{
+    color: blue; margin-left: 25px;
+}
+footer{
+    background-color: aqua; font-family: sans-serif; font-size: 12px; border-style: solid; border-bottom-width: 15px; border-top-color: blue; bottom: 2%; clear: both;
+}
+footer p{
+    display: inline;
+}

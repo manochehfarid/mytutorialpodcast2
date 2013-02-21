@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My learning Journal</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="/styles/styles.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29527888-1']);
+  _gaq.push(['_setDomainName', 'mytutorialpodcast.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </head>
+    <body>
+        <header>
+            <h1>My learning journal</h1>
+            <p class="description">A learning journal for my CIT 336 class</p>
+        </header>
+        <nav>
+            <h3> <a href="http://mytutorialpodcast.com">home</a></h3>
+            <h3> <a href="http://learning-journal.mytutorialpodcast.com/">My learning journal</a></h3>
+            <h3><a href="http://project.mytutorialpodcast.com/">My Yellowstone project</a></h3>
+            <h3> <a href="http://forum.mytutorialpodcast.com/">the mytutorialpodcast forum</a></h3>
+            <h3> <a href="http://guestbook.mytutorialpodcast.com/">the mytutorialpodcast guestbook</a></h3>
+            <h3><a href="http://photo-gallery.mytutorialpodcast.com">my photo gallery</a></h3>
+        </nav>
+        <div id="content">
+            <h1>My learning journal week 3</h1>
+            <p>There are many things I want to create for my website.  For example if I wanted to create a forum there are tutorials out there for creating a forum like <a href="http://net.tutsplus.com/tutorials/php/how-to-create-a-phpmysql-powered-forum-from-scratch/">this one</a> that use Mysql and PHP but for me as a site editor I look at my website every chance I get and see what other content I can add to it.  Sometimes I just want to create a guestbook here's an example of a haunted attractions <a href="http://pub42.bravenet.com/guestbook/show2.php?usernum=3525192131">guestbook</a>.  With my team I contribute to what the team decides with this database plan, like somebody proposes to add activities to the page and I check the quality of that page and I can either give the thumbs up or the thumbs down depending on the content's quality.</p>
+            <h1>My Learning Journal week 4</h1>
+            <p>Right now I'm using trial-and-error to get my forum to work and here is my <a href="http://forum.mytutorialpodcast.com/">forum's home page</a> which works perfectly. The only problems I have are <a href="http://forum.mytutorialpodcast.com/signup.php">signing up</a>, <a href="forum.mytutorialpodcast.com/signin.php">signing in</a> and <a href="http://forum.mytutorialpodcast.com/create_cat.php">creating a category</a>. I mean I followed <a href="http://net.tutsplus.com/tutorials/php/how-to-create-a-phpmysql-powered-forum-from-scratch/">this tutorial</a> to a tea and somehow when go to sign up for my own forum, I get this error: <img src="images/error.PNG" alt="signup-signin error"/>  Same thing happens when I sign into my forum.  But when I try to create a category, I get this error: <img src="images/error2.PNG" alt="PHP supplied error"/>.  And I tried to change the code in the connect.php to point to localhost, but to no avail.  Anyway, getting away from forum woes, when my team got together to go over the database plan I was looking over the mysql diagram on the screen and they constantly wanted to change it but I was almost tempted to go "just choose a plan and stick with it."  But then I digress and go with the plan they chose but me as site editor I'm responsible for the quality of web site data that get stored in the database.  For example when I write quality content for <a href="http://mytutorialpodcast.com">my podcast</a>, and then I track it with Google Analytics, it shows me an overview of visitors that come to my site: <img src="images/visitor_overview.PNG" alt="my visitor overview from Google Analytics"/>.  To get that quality podcast content out to the world I have a <a href="http://feeds.feedburner.com/mytutorialpodcast">feed</a> created by <a href="http://feedburner.google.com/fb/a/myfeeds?gsessionid=vlkk7Ovhpqv11Uy9qVXREw">Feedburner</a>.  But to get quality multimedia content in the podcast out to the world I'll be using <a href="http://www.blubrry.com/powerpress/">Powerpress</a> and I host my video content on <a href="https://posterous.com/">Posterous</a>.</p>
+            <h1>Learning Journal Week 5</h1>
+            <p>For what I've learned this week I decided instead of building just a forum to build a communtiy and I found a guy who did just that very thing.  His <a href="http://www.timkipptutorials.com/pages/index.php">website</a> has <img src="images/Custom_Google_Search.PNG" alt="Google Search"/> a custom search engine, <img src="images/Site_Nav.PNG" alt="Site Navigation" /> some creative site navigation, a forum topics archive,<img src="images/Topics_Archive.PNG" alt="Topics Archive" /> just to name a few.  What I've learned from this is that to connect to a database I need to know at least four things: my database host, my database username, my database password and the name of the database I'll be working with.  But I also learned about the header function which can redirect the user to any place you want that user to go.  In my free time I took the liberty to look at the features of Mysql community edition and I came across a connector for PHP to the mysql database known as the Mysql native driver for PHP which is included in version 5.4 of PHP you can read on <a href="http://dev.mysql.com/downloads/connector/php-mysqlnd/">this</a>. It gives some advantages to actually using the library.  Anyways getting away from what I learned I plan on taking what I've learned so far and using it to integrate my podcast blog into my entire site by building a community site.</p>
+            <h1>Learning Journal Week 6</h1>
+            <p>What I've learned this week is how to insert data captured from a registration form into a database. the code I'm about to show is an example of how I would insert date into a database: <code>$sql = 'INSERT INTO account(first_name,last_name,username,password)VALUES(:first,:last,:username,:password)';</code>. I also learned how to hash a password using one of three methods: md5 which is broken, sha1 which is still good, and crypt which includes these methods and more.  Here's an example of how I hash my password: <code>$salt = 'palt09re1pe3it5rmgc961'; // My salt
+    $saltedpassword = $salt.$password;
+    $password = sha1($saltedpassword); // creates a 40 character hash</code>.  I even learned how to use prepared statements when inserting data into a database.  Here's an example of my prepared statement inside my sign me up function and what happens when said statement doesn't work: <code>$stmt = $con->prepare($sql);
+        $stmt->bindvalue(':first',$firstname);
+        $stmt->bindvalue(':last', $lastname);
+        $stmt->bindvalue(':username', $username);
+        $stmt->bindvaule(':password', $password);
+        $success = $stmt->execute();
+        $rows = $stmt->rowCount();
+        $stmt->closeCursor();
+        
+        return $rows;
+    }  catch (PDOException $e){
+        header('location: /errordocs/500.php');
+    }</code>.I just might take this and my prepared statement code and use it to register users to my community site</p>
+        </div>
+        <footer>&copy; 2013 <a href="http://mytutorialpodcast.com">mytutorialpodcast.com</a></footer>
+    </body>
+</html>

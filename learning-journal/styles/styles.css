@@ -1,0 +1,25 @@
+body{
+    color: black; font-family: helvetica; font-size: 12px; padding: 2em; margin: 2em;
+}
+header{
+    background-color: lightblue; font-family: sans-serif;font-weight: bold; font-size: 12px; padding: 2em; margin:2em; line-height: 55%; border: solid 1px red;
+}
+footer{
+    background-color: lightblue; font-family: sans-serif;font-weight: bold; font-size: 12px; padding: 2em; margin:2em; line-height: 55%; border: solid 1px red;
+}
+h1{color: red; font-family: sans-serif; font-weight: bold; font-size: 24px; text-align: center;}
+p.description{
+    font-family: sans-serif; font-size: 14px; text-align: left; color: black;
+}
+nav{
+    background-color: lightblue; font-family: sans-serif;font-size: 12px; padding: 1em; margin: 1em; border: dotted thick black;
+}
+nav h3{
+    display: inline; margin: 1em; margin: 1em;
+}
+#content{
+    background-color: black;
+}
+p{
+    font-family: sans-serif; text-align: left; font-size: 18px; color: white;
+}
