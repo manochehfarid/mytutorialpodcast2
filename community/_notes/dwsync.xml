@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="footer.php" server="ftp.mytutorialpodcast.com//public_html/" local="130049409363241343" remote="130057149000000000" Dst="1" />
-<file name="header.php" server="ftp.mytutorialpodcast.com//public_html/" local="130049407449471882" remote="130057149000000000" Dst="1" />
-<file name="index.php" server="ftp.mytutorialpodcast.com//public_html/" local="130049413025722157" remote="130057149000000000" Dst="1" />
+<file name=".htaccess" server="ftp.mytutorialpodcast.com//public_html/" local="130210719641889297" remote="130210833000000000" Dst="2" />
+<file name="index.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210872392346123" remote="130210833000000000" Dst="2" />
+<file name="php.ini" server="ftp.mytutorialpodcast.com//public_html/" local="130210719624418298" remote="130210833000000000" Dst="2" />
+<file name="index.php" server="C:/Program Files (x86)/Zend/Apache2/htdocs/" local="130210872392346123" remote="130210872390000000" Dst="2" />
+<file name="template_pageTop.php" server="C:/Program Files (x86)/Zend/Apache2/htdocs/" local="130210873716671870" remote="130210873710000000" Dst="2" />
+<file name="template_pageBottom.php" server="C:/Program Files (x86)/Zend/Apache2/htdocs/" local="130210719594886609" remote="130210719590000000" Dst="2" />
+<file name="template_pageTop.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210873716671870" remote="130210833000000000" Dst="2" />
+<file name="template_pageBottom.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719594886609" remote="130210833000000000" Dst="2" />
+<file name="test.html" server="C:/Program Files (x86)/Zend/Apache2/htdocs/" local="130149423389374104" remote="130149423380000000" Dst="2" />
+<file name="maintainance.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719628438528" remote="130210833000000000" Dst="2" />
+<file name="activation.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719639219144" remote="130210833000000000" Dst="2" />
+<file name="error_log" server="ftp.mytutorialpodcast.com//public_html/" local="130210719637849066" remote="130210833000000000" Dst="2" />
+<file name="forgot_pass.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719635588937" remote="130210833000000000" Dst="2" />
+<file name="login.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719631428699" remote="130210833000000000" Dst="2" />
+<file name="logout.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210872501192349" remote="130210833000000000" Dst="2" />
+<file name="message.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719627098451" remote="130210833000000000" Dst="2" />
+<file name="signup.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719598986843" remote="130210833000000000" Dst="2" />
+<file name="test.html" server="ftp.mytutorialpodcast.com//public_html/" local="130210719590556361" remote="130210833000000000" Dst="2" />
+<file name="user.php" server="ftp.mytutorialpodcast.com//public_html/" local="130210719590326348" remote="130210833000000000" Dst="2" />
 </dwsync>
