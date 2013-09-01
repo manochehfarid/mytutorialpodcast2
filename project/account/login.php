@@ -1,63 +1,75 @@
 <?php
-
+date_default_timezone_set('MST');
+session_start();
+// If they're already logged in, we don't want them logging in again!
+// Send them to the my account page
+if($_SESSION['loggedin']){
+    header('location: /account/?action=myaccount');
+}
 ?>
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Login | Yellowstone Project</title>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '../modules/head.php'; ?>
-<link href="../css/print.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<header id="page-header">
-<div class="container sixteen columns">
-<div class="ten columns">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/pageheader.php';?>
-</div>
-<div id="tools" class="six columns">
-<?php include $_SERVER['DOCUMENT_ROOT'].'/modules/pagetools.php';?>
-</div>
-</div>
-</header>
-<nav id="pagenav">
-<div class="container sixteen columns">
-<?php include $_SERVER['DOCUMENT_ROOT'].'/modules/pagenav.php';?>
-</div>
-</nav>
-<div id="page-content">
-<div class="container sixteen columns">
-<h1>Login</h1>
-<?php
-if(isset($message)){ echo "<p class='message'>$message</p>";} elseif(!empty($errors)){echo '<ul class="errors">';
-foreach($errors as $errors){
-	echo '<li>' . $error . '</li>';
-	}
-	echo '</ul>';
-}?>
-<p>Login Please</p>
-
-<form method="post" action=".">
-<fieldset>
-<label for="iusername">Username</label>
-<input type="email" name="iusername" id="iusername" size="30"><span class="info">(This is your username)</span><br>
-<label for="ipassword">Password</label>
-<input type="password" name="ipassword" id="ipassword" size="10"><br>
-<label for="action">&nbsp;</label>
-<input type="submit" name="submit" id="action" value="Login">
-<input type="hidden" name="action" value="loggingin">
-</fieldset>
-</form>
-</div>
-</div>
-<footer id="page-footer">
-<div class="container sixteen columns">
-<?php include $_SERVER['DOCUMENT_ROOT'].'/modules/pagefooter';?>
-<p>Last Updated: <?php echo date('j F, Y', getlastmod()); ?></p>
-</div>
-</footer>
-</body>
+<html lang="en">
+    <head>
+        <title>Login | Yellowstone Park</title>
+        <!-- Page header -->
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/head.php' ?>
+    </head>
+    <body>
+        <div class="container">
+            <header class="masthead">
+                <!-- User Tools -->
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/usertools.php' ?>
+                <!-- Photo Header -->
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/header.php' ?>
+                <!-- Top nav bar -->
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/topnav.php' ?>
+            </header>
+            <!-- Main content area -->
+            <div class="content">
+                <h1 class="text-center">Login</h1>
+                <hr>
+                <?php
+                // If there was a message generated, echo it at the top.
+                if (is_array($message)) {
+                    echo "<div class='text-center lead'>";
+                    echo "<p class='" . $message['class'] . "'>" . $message['message'] . "</p>";
+                    echo "</div>";
+                }
+                ?>
+                <div class="row-fluid">
+                    <div class="span2"></div>
+                    <div class="span8">
+                        <form class='form-signin' method='post' action='.'>
+                            <input type='hidden' name='action' id='action' value='loggingin'>
+                            <input type='email' class='input-block-level' name='email' id='email' placeholder='Email' autofocus required>
+                            <?php
+                            if (isset($errors)) {
+                                echo "<span class='text-center text-error'>";
+                                echo $errors[1];
+                                echo "</span>";
+                            }
+                            ?>
+                            <input type='password' class='input-block-level' name='password' id='password' placeholder='Password' required>
+                            <?php
+                            if (isset($errors)) {
+                                echo "<span class='text-center text-error'>";
+                                echo $errors[2];
+                                echo "</span>";
+                            }
+                            ?>
+                            <button class='btn btn-large btn-info' type='submit'>Sign in</button>
+                        </form>
+                    </div>
+                    <div class="span2"></div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class='footer'>
+                <!-- Footer nav bar -->
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/footernav.php' ?>
+                <!-- Copyright and last updated statement -->
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/copyright.php' ?>
+            </footer>
+        </div>
+    </body>
 </html>
-<?php unset($message); ?>

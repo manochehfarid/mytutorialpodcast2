@@ -1,2 +1,6 @@
 # Use PHP5 Single php.ini as default
 AddHandler application/x-httpd-php5s .php
+
+# Use my error documents
+
+ErrorDocuments /error/500.php
